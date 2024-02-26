@@ -1,6 +1,6 @@
 #' @description
-#' Calculate the ratio of columns to rows in a [data.table].
-#' @param data A [data.table], with two dimensions.
+#' Calculate the ratio of columns to rows in a data.frame.
+#' @param data A data.frame, with two dimensions.
 #' @param ignore A character vector of column names to exclude from the calculation.
 #' @return a numeric ratio
 #' @export dimension_ratio
