@@ -11,6 +11,8 @@ pcauxng <-
       # TODO: Add checks for miceargs and prcompargs
     )
 
+    # TODO: generate raw data with component scores and write out
+
     original_columns <- colnames(data)
 
     empty_columns <- names(datawizard::empty_columns(data))
