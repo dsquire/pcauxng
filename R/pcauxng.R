@@ -14,6 +14,7 @@ pcauxng <-
     original_columns <- colnames(data)
 
     empty_columns <- names(datawizard::empty_columns(data))
+    empty_rows <- length(datawizard::empty_rows(data))
 
     ## TODO: Check for columns with no data and add list to ignore
     if (ignore != NULL) {
@@ -25,10 +26,6 @@ pcauxng <-
     # TODO: remove `ignore` from dimension_ratio
     if (dimension_ratio(data, ignore) >= 1) {
       message("Your ratio of columns to rows is greater than or equal to 1")
-    }
-
-    if (length(names(datawizard::empty_columns(data))) > 0) {
-
     }
 
     # get a shadow matrix to enable resetting the NA's instead of reloading
