@@ -1,8 +1,12 @@
+#' @description
+#' Create auxiliary variables
+#' @return a data.frame with auxiliary variables
+#' @importFrom utils combn
 createauxvars <- function(data, ignore, prcompargs) {
   df <- data[,!(names(data) %in% ignore)]
   remove(data)
 
-  dfcombn <- combn(df, m = 2, simplify = FALSE)
+  dfcombn <- utils::combn(df, m = 2, simplify = FALSE)
   auxlen = length(dfcombn)
   remove(df)
 

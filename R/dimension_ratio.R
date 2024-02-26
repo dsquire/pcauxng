@@ -3,7 +3,6 @@
 #' @param data A [data.table], with two dimensions.
 #' @param ignore A character vector of column names to exclude from the calculation.
 #' @return a numeric ratio
-#' @importFrom data.table is.data.table
 #' @export dimension_ratio
 dimension_ratio <-
   function(data, ignore = NULL) {
