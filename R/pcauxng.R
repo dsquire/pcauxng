@@ -12,6 +12,9 @@ pcauxng <-
     )
 
     original_columns <- colnames(data)
+
+    empty_columns <- names(datawizard::empty_columns(data))
+
     ## TODO: Check for columns with no data and add list to ignore
     if (ignore != NULL) {
       ignoredata <- datawizard::get_columns(data, ignore)
