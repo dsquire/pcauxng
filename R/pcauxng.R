@@ -12,10 +12,7 @@ pcauxng <-
     )
 
     # TODO: generate raw data with component scores and write out
-    empty_cols <- names(datawizard::empty_columns(data))
-    if (length(empty_cols) > 0) {
-      warning("Found empty columns: ", toString(empty_cols))
-    }
+
 
 
     ignore <- c(ignore)
