@@ -16,9 +16,13 @@ check_data <- function (data, ignore = NULL) {
     message("We found character columns: ", toString(character_cols))
   }
 
+  # Add check for columns with a variance of 0
+  # build combined ignore here
+
   if (dimension_ratio(data, ignore) >= 1) {
     message("Your ratio of columns to rows is greater than or equal to 1")
   }
+
 
   ignore <- unique(c(ignore, empty_cols, character_cols))
 

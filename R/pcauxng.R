@@ -13,11 +13,7 @@ pcauxng <-
 
     # TODO: generate raw data with component scores and write out
 
-
-
-    ignore <- c(ignore)
-
-    original_columns <- colnames(data)
+     original_columns <- colnames(data)
 
     modifyList()
 
