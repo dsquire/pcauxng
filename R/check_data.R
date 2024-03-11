@@ -16,15 +16,17 @@ check_data <- function (data, ignore = NULL) {
     message("We found character columns: ", toString(character_cols))
   }
 
-  # Add check for columns with a variance of 0
-  # build combined ignore here
+  nzv_cols <- caret::nzv(data, names = TRUE)
+
+  if (length(nzv_cols) > 0) {
+    message("We found columns with zero variance and / or near-zero variance: ", toString(nzv_cols))
+  }
+
+  ignore <- unique(c(ignore, empty_cols, character_cols, nzv_cols))
 
   if (dimension_ratio(data, ignore) >= 1) {
     message("Your ratio of columns to rows is greater than or equal to 1")
   }
-
-
-  ignore <- unique(c(ignore, empty_cols, character_cols))
 
   return(ignore)
 
