@@ -22,7 +22,7 @@ check_data <- function (data) {
 
   if (length(nzv_cols) > 0) {
     message(
-      "We found columns with zero variance and / or near-zero variance: ",
+      "We found columns with zero variance or near-zero variance: ",
       toString(nzv_cols)
     )
   }
