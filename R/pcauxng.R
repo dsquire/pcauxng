@@ -3,15 +3,10 @@ pcauxng <-
            miceargs1 = NULL,
            miceargs2 = NULL,
            prcompargs = NULL,
-<<<<<<< HEAD
 
-           # ignore = NULL,
-           # quiet = FALSE) {
-  )
-=======
            ignore = NULL,
            quiet = FALSE) {
->>>>>>> b73688b562e834a7e9964830db78e1cdea71bfe6
+
     stopifnot(
       'argument "data" is missing, with no default' = !missing(data),
       'argument "data" must be a data frame' = is.data.frame(data),
