@@ -1,5 +1,5 @@
 check_data <- function (data) {
-  empty_rows <- datawizard::empty_rows(data)
+  empty_rows <- empty_rows(data)
 
   if (length(empty_rows) > 0) {
     message("We found empty rows: ", toString(empty_rows))
