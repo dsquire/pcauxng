@@ -1,4 +1,5 @@
 # Function to randomly delete N data points from specified columns in a data frame
+# Hello World.
 delete_random_values <- function(df, columns_to_delete, N) {
   result_df <- df
 
