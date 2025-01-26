@@ -1,4 +1,9 @@
-
+# ****************************************************************
+#
+# this function is strictly for testing, and will not be in the
+# final PcAux.
+#
+# ****************************************************************
 
 advanced_match <- function(list_of_columns, df){
   
