@@ -58,3 +58,4 @@ pcauxng <-
 
 # TODO: generate raw data with component scores and write out
 # TODO: Check for columns with no data and add list to ignore
+# TODO: Something.
